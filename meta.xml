@@ -1,0 +1,32 @@
+<meta>
+  <info author="RuSO" version="1.0" type="script" name="RtoOL"/>
+
+  <script src="shared.lua" type="shared"/> <!--Do not remove -->
+  <script src="ui_universal.lua" type="client"/> <!--Do not remove -->
+  <script src="help_c.lua" type="client"/> <!--Do not remove -->
+  <script src="warp_c.lua" type="client"/>
+  <script src="warp_s.lua" type="server"/>
+  <!-- <script src="cmder.lua" type="client"/> -->
+  <script src="display_c.lua" type="client"/>
+  <script src="preview_c.lua" type="client"/>
+  <script src="chrono_c.lua" type="client"/>
+  <script src="quickadd_c.lua" type="client"/>
+  <script src="quickedit_c.lua" type="client"/>
+  <!-- <script src="inspector_c.lua" type="client"/> -->
+  <script src="util_s.lua" type="server" /> <!--Do not remove -->
+
+  <config src="objects.xml" type="client"/> <!--Necessary for Quick Add -->
+
+  <file src="files/bonk.mp3" /> <!--Necessary for Display -->
+  <file src="files/qeon.png"/> <!--Necessary for Quick Edit -->
+  <file src="files/qeoff.png"/> <!--Necessary for Quick Edit -->
+  <file src="files/show.png"/>
+  <file src="files/hide.png"/>
+  <file src="files/mta-helper.fx"/> 
+  
+  <export function="doCreateElement" type="client"/>
+  <export function="selectElement" type="client"/>
+  <export function="isEditorRunning" type="client"/>
+  <export function="isEditorTestMode" type="client"/>
+  <export function="registerUIModule" type="client" />
+</meta>
